@@ -73,7 +73,6 @@ void AddStudent(Profile*& Student, int& FileCount) {				// Добавление 
 		NewStud[i] = Student[i];
 	delete[] Student;
 	Student = NewStud;												// Расширяем массив на (+1) и тут же заполняем новую ячейку
-	delete[] NewStud;
 
 	SetConsoleCP(1251);  // <--- Меняем кодировку консоли, чтоб она воспринимала кириллицу
 	cout << "ФИО студента: ";
